@@ -1,2 +1,6 @@
+# Audio
+use.dedicated.device.for.voip=true
+audio.deep_buffer.media=true
+
 # Radio
 telephony.lteOnGsmDevice=0
