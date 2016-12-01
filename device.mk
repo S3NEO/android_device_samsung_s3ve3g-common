@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8226
+    lights.MSM8226
 
 # Media
 PRODUCT_COPY_FILES += \
