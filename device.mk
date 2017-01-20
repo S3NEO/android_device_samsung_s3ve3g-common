@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
     
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+    
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
