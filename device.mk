@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8226.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8226.conf
+    
+# Vibrator
+PRODUCT_PACKAGES += \
+     android.hardware.vibrator@1.0-impl        
 
 # Wifi
 PRODUCT_PACKAGES += \
