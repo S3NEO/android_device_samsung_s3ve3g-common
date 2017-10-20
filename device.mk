@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
 
+# Radio
+PRODUCT_PACKAGES += \
+    libsecnativefeature 
+    
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
