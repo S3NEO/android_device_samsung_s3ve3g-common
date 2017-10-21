@@ -217,16 +217,12 @@ bin/ds_fmc_appd
 bin/qmuxd
 bin/radish
 bin/rfs_access
-bin/rild
 bin/rmt_storage
 lib/libatparser.so
 lib/libcordon.so
 lib/libfactoryutil.so
 lib/libomission_avoidance.so
-lib/libreference-ril.so
-lib/libril.so
 lib/libsec-ril.so
-lib/libsecril-client.so
 vendor/lib/libconfigdb.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
