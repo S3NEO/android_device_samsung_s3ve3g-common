@@ -27,6 +27,9 @@ DEVICE_PATH := device/samsung/s3ve3g
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# Build
+BLOCK_BASED_OTA := true
+
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
