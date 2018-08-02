@@ -232,7 +232,7 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so
 
 # Sensors
-lib/hw/sensors.msm8226.so
+lib/hw/sensors.vendor.msm8226.so
 lib/libyasalgo.so
 
 # Thermal
