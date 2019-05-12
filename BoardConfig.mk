@@ -28,6 +28,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Build
 BLOCK_BASED_OTA := true
+TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/libmmcamera_imx175.so|libimx175_shim.so
 
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
