@@ -27,6 +27,11 @@ PRODUCT_COPY_FILES += \
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
+    
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni    
 
 # Lights
 PRODUCT_PACKAGES += \
