@@ -222,7 +222,7 @@ lib/libatparser.so
 lib/libcordon.so
 lib/libfactoryutil.so
 lib/libomission_avoidance.so
-lib/libsec-ril.so
+lib/libsec-ril.so|075570a628f465f92f3067afcefb6938d4e5dc3a
 vendor/lib/libconfigdb.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libxml.so

@@ -19,6 +19,18 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 # Proprietary files
 $(call inherit-product, vendor/samsung/s3ve3g/s3ve3g-vendor.mk)
 
+# System properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3=""
+    
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
