@@ -58,6 +58,12 @@ ro.telephony.ril_class=SamsungMSM8226RIL
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
 
+# Sensors
+ro.qc.sdk.gestures.camera=false
+ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.sensors.gestures=true
+debug.sensors=1
+
 # Vendor security patch level
 ro.lineage.build.vendor_security_patch=2017-08-01
 
