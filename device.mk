@@ -42,6 +42,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_imx175
 
+# CRDA
+PRODUCT_PACKAGES += \
+    crda \
+    linville.key.pub.pem \
+    regdbdump \
+    regulatory.bin        
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
