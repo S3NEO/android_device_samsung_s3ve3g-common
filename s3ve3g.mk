@@ -16,9 +16,6 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-# Proprietary files
-$(call inherit-product, vendor/samsung/s3ve3g/s3ve3g-vendor.mk)
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -45,10 +42,6 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720       
-    
-# Camera
-PRODUCT_PACKAGES += \
-    libshim_imx175
 
 # CRDA
 PRODUCT_PACKAGES += \
@@ -89,6 +82,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml    
+    
+
+# NFC
+# $(call inherit-product, device/samsung/s3ve3g-common/nfc/pn547/product.mk)    
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -133,5 +130,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
-# Inherit from qcom-common
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/samsung/s3ve3g-common/s3ve3g-common-vendor.mk)    
+
+# Common msm8226
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)

@@ -13,25 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from msm8226-common
--include device/samsung/msm8226-common/BoardConfigCommon.mk
-
 TARGET_OTA_ASSERT_DEVICE := s3ve3g,s3ve3gds,s3ve3gjv
 
-DEVICE_PATH := device/samsung/s3ve3g
+COMMON_PATH := device/samsung/s3ve3g-common
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 
 # Build
 BLOCK_BASED_OTA := true
-TARGET_LD_SHIM_LIBS += \
-    /system/vendor/lib/libmmcamera_imx175.so|libimx175_shim.so
 
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
@@ -40,10 +35,6 @@ BOARD_HAVE_QCOM_FM := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_s3ve3g
-TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -54,8 +45,8 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x1e00000
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/samsung/s3ve3g
-TARGET_KERNEL_CONFIG := lineageos_s3ve3g_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+TARGET_KERNEL_CONFIG := lineage_s3ve3g_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -68,21 +59,27 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Power HAL
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(DEVICE_PATH)/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(COMMON_PATH)/power/power_ext.c
 TARGET_POWERHAL_VARIANT := qcom
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Radio
 BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
+
+# Inherit from msm8226-common
+-include device/samsung/msm8226-common/BoardConfigCommon.mk
+
+# Inherit from the proprietary version
+-include vendor/samsung/s3ve3g-common/BoardConfigVendor.mk
