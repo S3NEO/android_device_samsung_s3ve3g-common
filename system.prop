@@ -29,6 +29,13 @@ ro.bluetooth.dun=true
 ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 
+# Display
+ro.hdcp2.rx=tz
+ro.qualcomm.cabl=0
+ro.secwvk=144
+ro.sf.lcd_density=320
+debug.hwui.use_buffer_age=false
+
 # GPS
 persist.gps.qc_nlp_in_use=1
 ro.gps.agps_provider=1
