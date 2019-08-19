@@ -2,6 +2,12 @@
 use.dedicated.device.for.voip=true
 audio.deep_buffer.media=true
 
+# GPS
+persist.gps.qc_nlp_in_use=1
+ro.gps.agps_provider=1
+ro.qc.sdk.izat.premium_enabled=0
+ro.qc.sdk.izat.service_mask=0x0
+
 # Radio
 persist.data.netmgrd.qos.enable=true
 persist.data.qmi.adb_logmask=0
