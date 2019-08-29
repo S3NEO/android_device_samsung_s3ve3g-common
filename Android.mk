@@ -1,4 +1,5 @@
-# Copyright (C) 2014 The LineageOS Project
+#
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,11 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),s3ve3gxx s3ve3gjv s3ve3gds)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
+ifneq ($(filter s3ve3g s3ve3gxx s3ve3gjv s3ve3gds,$(TARGET_DEVICE)),)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

@@ -15,4 +15,4 @@
 #
 
 # NFC
-DEVICE_MANIFEST_FILE += device/samsung/s3ve3g/nfc/manifest.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/nfc/manifest.xml

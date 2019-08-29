@@ -4,11 +4,11 @@
     "target_path": "device/samsung/msm8226-common"
   },
   {
+    "repository": "android_kernel_samsung_msm8226",
+    "target_path": "kernel/samsung/msm8226"
+  },
+  {
     "repository": "android_packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
-  }  
-  {
-    "repository": "android_kernel_samsung_s3ve3g",
-    "target_path": "kernel/samsung/s3ve3g"
   }
 ]

@@ -1,18 +1,17 @@
 # Audio
 af.fast_track_multiplier=1
+audio_hal.period_size=192
+audio.offload.video=true
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=fluence
+use.voice.path.for.pcm.voip=false
+use.dedicated.device.for.voip=true
 audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=32
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
-audio.offload.video=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-ro.vendor.audio.sdk.fluencetype=fluence
-vendor.audio.offload.multiple.enabled=false
-vendor.audio_hal.period_size=192
-vendor.dedicated.device.for.voip=true
-vendor.voice.path.for.pcm.voip=false
+audio.offload.multiple.enabled=false
 
 # Bluetooth
 qcom.bluetooth.soc=smd
@@ -29,8 +28,14 @@ ro.bluetooth.dun=true
 ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 
-# Camera / Media
+# Camera
 camera2.portability.force_api=1
+
+# Debug
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1 
+persist.sys.usb.config=adb
 
 # Display
 ro.hdcp2.rx=tz
@@ -40,10 +45,19 @@ ro.sf.lcd_density=320
 debug.hwui.use_buffer_age=false
 
 # GPS
-persist.gps.qc_nlp_in_use=1
+persist.gps.qc_nlp_in_use=0
 ro.gps.agps_provider=1
 ro.qc.sdk.izat.premium_enabled=0
 ro.qc.sdk.izat.service_mask=0x0
+
+# Media
+persist.media.treble_omx=false
+
+# NFC
+ro.nfc.port=I2C
+
+# Perf
+ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
 # Radio
 persist.data.netmgrd.qos.enable=true
@@ -52,14 +66,9 @@ persist.radio.add_power_save=1
 rild.libpath=/system/vendor/lib/libsec-ril.so
 ro.telephony.mms_data_profile=5
 ro.ril.telephony.qan_resp_strings=6
-ro.telephony.default_network=3
-ro.telephony.ril_class=SamsungMSM8226RIL
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
-
-# Subsystem
-persist.sys.ssr.enable_debug=1
 
 # Sensors
 ro.qc.sdk.gestures.camera=false
@@ -67,9 +76,12 @@ ro.qc.sdk.camera.facialproc=false
 ro.qc.sdk.sensors.gestures=true
 debug.sensors=1
 
+# Tethering
+net.tethering.noprovisioning=true
+
 # Vendor security patch level
 ro.lineage.build.vendor_security_patch=2017-08-01
 
-# Wi-Fi
+# WiFi
 ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0

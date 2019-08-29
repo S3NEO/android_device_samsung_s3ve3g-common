@@ -1,127 +1,40 @@
-# ADSP
-bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libscve.so
-vendor/lib/rfsa/adsp/libadsp_denoise_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+# Samsung Package Version: I9301IXCUARA1_I9301IXXUAPG1, unless pinned
 
-# Audio
-etc/Bluetooth_cal.acdb
-etc/General_cal.acdb
-etc/Global_cal.acdb
-etc/Handset_cal.acdb
-etc/Hdmi_cal.acdb
-etc/Headset_cal.acdb
-etc/Speaker_cal.acdb
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-vendor/lib/libcsd-client.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libqcreverb.so
-
-# Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
-vendor/lib/libbtnv.so
-
-# Camera
-bin/mm-qcamera-daemon
-lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
-lib/libarcsoft_flawlessface.so
-lib/libarcsoft_night_shot.so
-lib/libarcsoft_panorama_burstcapture.so
-lib/libarcsoft_picaction.so
-lib/libarcsoft_sensorndk.so
-lib/libarcsoft_skin_soften.so
-lib/libmmcamera_cac.so
-lib/libmmcamera_cac2_lib.so
-lib/libmmcamera_fidelix_eeprom.so
-lib/libmmcamera_interface.so
-lib/libmmcamera_wavelet_lib.so
-lib/libmmcamera2_stats_algorithm.so
-lib/libmmjpeg_interface.so
-lib/libqomx_core.so
-vendor/lib/libactuator_ak7345_camcorder.so
-vendor/lib/libactuator_ak7345_camera.so
-vendor/lib/libactuator_dw9804_camcorder.so
-vendor/lib/libactuator_dw9804_camera.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
-vendor/lib/libmmcamera_image_stab.so
-vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_imx175.so
-vendor/lib/libmmcamera_s5k4h5yb.so
-vendor/lib/libmmcamera_s5k6a3yx.so
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera2_vpe_module.so
-vendor/lib/libmmcamera2_wnr_module.so
-vendor/lib/libmmipl.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/liboemcamera.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
+# Activity recognition
 vendor/lib/libsensor1.so
 
-# Camera chromatix
-lib/B08QT_libTsAe.so
-lib/B08QT_libTsAf.so
-lib/B08QT_libTs_J_Accm.so
-lib/B08QT_libTs_J_Awb.so
-lib/libAfSingle.so
-lib/libchromatix_s5k6a3yx_smart_stay.so
-lib/libchromatix_s5k6a3yx_vt.so
-lib/libchromatix_s5k6a3yx_vt_hd.so
-lib/libTsAe.so
-lib/libTsAf.so
-lib/libTs_J_Accm.so
-lib/libTs_J_Awb.so
-vendor/lib/B08QT_libchromatix_imx175_common.so
-vendor/lib/B08QT_libchromatix_imx175_common_res0.so
-vendor/lib/B08QT_libchromatix_imx175_common_res1.so
-vendor/lib/B08QT_libchromatix_imx175_default_video.so
-vendor/lib/B08QT_libchromatix_imx175_liveshot.so
-vendor/lib/B08QT_libchromatix_imx175_panorama.so
-vendor/lib/B08QT_libchromatix_imx175_preview.so
-vendor/lib/B08QT_libchromatix_imx175_snapshot.so
-vendor/lib/B08QT_libchromatix_imx175_video_hd.so
-vendor/lib/B08QT_libchromatix_imx175_zsl.so
-vendor/lib/B08QT_libchromatix_imx175_zslshot.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_common.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_common_res0.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_common_res1.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_default_video.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_liveshot.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_panorama.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_preview.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_snapshot.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_video_hd.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_zsl.so
-vendor/lib/E08QL_libchromatix_s5k4h5yb_zslshot.so
-vendor/lib/libchromatix_imx175_common.so
-vendor/lib/libchromatix_imx175_preview.so
-vendor/lib/libchromatix_s5k6a3yx_common.so
-vendor/lib/libchromatix_s5k6a3yx_default_video.so
-vendor/lib/libchromatix_s5k6a3yx_preview.so
-vendor/lib/libchromatix_s5k6a3yx_snapshot.so
-vendor/lib/libchromatix_s5k6a3yx_video_hd.so
-vendor/lib/libchromatix_s5k6a3yx_zsl.so
+# Audio - Libs pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+vendor/lib/libacdbloader.so|27ceba70917afc0e9b26877354c8404dae5af09c
+vendor/lib/libacdbrtac.so|f1a150ccd4bf0b5a2957532ec2690b52124d006d
+vendor/lib/libadiertac.so|e29a874dc3e6622fda4fc76032a7ea5dc44eb228
+vendor/lib/libaudcal.so|fa2bbd6df7818c787e472791d69fd6c4db184f7b
+etc/acdbdata/Bluetooth_cal.acdb::vendor/etc/acdbdata/Bluetooth_cal.acdb
+etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
+etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
+etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
+etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
+etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
+etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
+vendor/lib/soundfx/libqcbassboost.so|0d47c9255f0fb0865ed7b14d83cddd79ad3bde0c
+vendor/lib/soundfx/libqcvirt.so|9643ef67b86700b78ea26f54e29808ea814bde40
+vendor/lib/soundfx/libqcreverb.so|1819566d8c69bb8f562cf4b0422db67f9c8393af
+
+# ADSP - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+bin/adsprpcd:vendor/bin/adsprpcd|794cbef158698b05016cd911055d2e35b8156616
+vendor/lib/libadsprpc.so|cf424f4aa995b892583527e9acc4d1264c0d955e
+vendor/lib/libfastcvadsp_stub.so|95d7d1121e52bd576c301cba01e79af67d7b79f1
+vendor/lib/libfastcvopt.so|17398d7d04b12680d81aeae3f93bb899b71ee1aa
+vendor/lib/libscve.so|2ece882804e158db562bb5c1532e1a83848849b7
+vendor/lib/libscve_stub.so|a96edc3e7b1854d1bf678c8a64df02eb318b6dbc
+vendor/lib/rfsa/adsp/libadsp_denoise_skel.so|67952d7ef062bfd1de626573a443c210af125db1
+vendor/lib/rfsa/adsp/libdspCV_skel.so|095fe6656baebbfc12046f322aeb94c210b018e8
+vendor/lib/rfsa/adsp/libfastcvadsp.so|a1fad41c2f283b49ae85986c013ee1179ad80e91
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|9eb9499087e8cbd87aef57b25eb306a3ea481524
+
+# Bluetooth - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+bin/btnvtool:vendor/bin/btnvtool|3b518f5626d211930c0d63e4b2680797c6c7a4d5
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|e78812bdcf2ea3ac4352d3e5ffaae8a9223fdf0f
+vendor/lib/libbtnv.so|2061b485bc848df502cf6d009e6d59781ef49768
 
 # Camera firmware
 etc/B08QT_imx175_module_info.xml
@@ -132,111 +45,73 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
 
-# DRM
-bin/qseecomd
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libdrmdecrypt.so
-vendor/lib/libdrmdiag.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L1.so
+# CPU - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+bin/mpdecision:vendor/bin/mpdecision|f2f62bee58d83a16f649ad63d0520de30bca0d7f
+vendor/bin/thermal-engine|fb82c53fa2f9c7618a6540de61b4477ac54523a3
+vendor/lib/libthermalclient.so|e1f2136608a7104016f7f7261dddcfbb0c6aa870
+vendor/lib/libthermalioctl.so|9c7993e03f68bb17dd744c0369b9bfaff23a1e66
 
-# GPS
--app/com.qualcomm.location/com.qualcomm.location.apk
-etc/permissions/com.qualcomm.location.xml
-lib/hw/flp.default.so
-lib/libloc_api_v02.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
+# DRM - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+bin/qseecomd:vendor/bin/qseecomd|4a69e9799a988d5527e8802470a0a036cb0b120f
+vendor/lib/libdrmdiag.so|498085e4fc40eacee17bb9c78eaf2da060ecc58e
+vendor/lib/libdrmfs.so|6f50f22ae12695c2bb29f5c6c2c00029e78b0c12
+vendor/lib/libdrmtime.so|f50a8cbddeddf591aa94856ffc38801bda1b7a8a
+vendor/lib/libQSEEComAPI.so|73a760768f621ea48a8e3bb83e0cbbce5937cdf5
+vendor/lib/librpmb.so|32b75d07607193bcc81fe871d98ceb720fd210e4
+vendor/lib/libssd.so|f7216c09cd17a94fb946179503cd286262be9de8
 
-# Graphics
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/libsc-a3xx.so
-
-# Graphics firmware
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
-
-# IPC router security
-bin/irsc_util
+# IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
 etc/sec_config
 
-# Media
-vendor/lib/libDivxDrm.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
-vendor/lib/libSHIMDivxDrm.so
+# IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+bin/radish:vendor/bin/radish|5c54cb3d5c3472b6bb8f535817eeb55852b34ef0
 
-# Perf
-bin/mpdecision
-vendor/lib/libqc-opt.so
+# Media - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+vendor/lib/libOmxAacDec.so|9d3a2a498fa740be2a32c336a2dc1a911decd50b
+vendor/lib/libOmxAmrwbplusDec.so|54ebb32cf1f71ca1fe8824176c8c4154a9ee120f
+vendor/lib/libOmxEvrcDec.so|3c31f3d7b420db0076dfb35eb4cbc3efa5160ab0
+vendor/lib/libOmxQcelp13Dec.so|05392036cf8981a260b91991c306407b02afdcb1
+vendor/lib/libOmxWmaDec.so|1b96f549a54660218c1459cf7133d2a5632ca657
 
-# Qualcomm framework
-vendor/lib/libdiag.so
-vendor/lib/libdsnetutils.so
-vendor/lib/libdsucsd.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
-vendor/lib/libqcci_legacy.so
-vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libqmi_encdec.so
-vendor/lib/libqmiservices.so
+# Perf - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+vendor/lib/libqc-opt.so|86b2577d54bafa497601ff6b6c4159b210e55fae
+vendor/lib/libqti-perfd-client.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 
-# Radio
-bin/ds_fmc_appd
-bin/qmuxd
-bin/radish
-bin/rfs_access
-bin/rmt_storage
-lib/libatparser.so
-lib/libcordon.so
-lib/libfactoryutil.so
-lib/libomission_avoidance.so
-vendor/lib/libconfigdb.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libxml.so
+# Qualcomm - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
+vendor/lib/libxml.so|251560fdf50b82c15f481bfc6cf12235c42e19c9
+
+# Qualcomm Framework - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
+lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|9c19d5aacc094597c166529386f83ac721ac1979
+lib/libperipheral_client.so:vendor/lib/libperipheral_client.so|7107a8e656fabc5ff6b7a33740be80a1add6abbd
+vendor/lib/libconfigdb.so|a7eedfbb0ffa070c9239f0d293262e268342da1d
+vendor/lib/libdiag.so|2dd30d2de57567aa4575f98e4679cdbd625bbbe6
+vendor/lib/libdsi_netctrl.so|d5d25fd5b1ea250bdfcb64059eafaf609fe2e32c
+vendor/lib/libdsutils.so|99fac25d6a10ea89a7f66cfc7c3a36478a178568
+vendor/lib/libidl.so|9b871bda84a1204b35b5a93311d666aa36a7f8b8
+vendor/lib/libnetmgr.so|fc8dcd60b4fd28518e03949842dd6b496712c2d1
+vendor/lib/libqcci_legacy.so|5f0f25a72677d0b3183031490e45b6de26735327
+vendor/lib/libqdi.so|6bd79ba4dc4b4af654cda666e829312ba07a22e9
+vendor/lib/libqmi.so|d120b126ba94cb2d4164243ef7a8516168b6fedf
+vendor/lib/libqmi_cci.so|b94c84c54183e538a7802ca531da7cf2b8176614
+vendor/lib/libqmi_client_qmux.so|79cb7b305bd9f87c581f26c805f4ca2bbdf3a069
+vendor/lib/libqmi_common_so.so|6c70d0c23898f4d5aa5a962736a06aa3d21e7aa6
+vendor/lib/libqmi_csi.so|dee249a1f0fff082b5e5547cfab103ac10ab55e2
+vendor/lib/libqmi_encdec.so|82e39ae7e4bb8651d06fdae99fc38e3fb390b62d
+vendor/lib/libqmiservices.so|0b90d67d7ec0b0bc3de2b5ccc3afcda13bd5ffd8
+
+# Radio - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
+bin/qmuxd:vendor/bin/qmuxd|e257d63996812e2eb23810bda59913f558ee03d2
+bin/rfs_access:vendor/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
+bin/rmt_storage:vendor/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cdd
+vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
 
 # Sensors
-lib/hw/sensors.vendor.msm8226.so
-lib/libyasalgo.so
+lib/hw/sensors.vendor.msm8226.so:vendor/lib/sensors.vendor.msm8226.so
+lib/libyasalgo.so:vendor/lib/libyasalgo.so
 
-# Thermal
-bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib/libthermalioctl.so
-
-# Time services
+# Time services - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 -app/TimeService/TimeService.apk
-bin/time_daemon
-vendor/lib/libtime_genoff.so
-vendor/lib/libTimeService.so
+bin/time_daemon:vendor/bin/time_daemon|b35d3b8364ec2ded9ee551ee41eb80b84067d6a9
+vendor/lib/libTimeService.so|dde4ddd81b4f56dde68fedf9ec2e0d2c3512d4f2
+-vendor/lib/libtime_genoff.so|13eccbbd1fdbd8474247ed6552e3b31507636531
