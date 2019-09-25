@@ -3,3 +3,7 @@
 
 # sysfs
 /sys/devices(/.*)?/input/input[2-3]/enabled             u:object_r:sysfs_hal_pwr:s0
+
+# SamsungParts
+/sys/class/timed_output/vibrator/pwm_value    u:object_r:sysfs_vibrator:s0
+/sys/kernel/debug/regulator/8226_smbbp_otg/enable    u:object_r:sysfs_otg:s0

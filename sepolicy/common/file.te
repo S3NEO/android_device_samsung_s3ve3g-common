@@ -1,1 +1,4 @@
 type vfsspi_data_file, file_type, data_file_type;
+
+# SamsungParts
+type sysfs_otg, sysfs_type, fs_type;

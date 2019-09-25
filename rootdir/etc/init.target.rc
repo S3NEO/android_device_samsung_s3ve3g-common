@@ -82,6 +82,12 @@ on boot
     chown system radio /sys/class/sensors/proximity_sensor/vendor
     chown system radio /sys/class/sensors/proximity_sensor/name
 
+	# Samsung Parts
+	chown system system /sys/class/timed_output/vibrator/pwm_value
+	chmod 0660 /sys/class/timed_output/vibrator/pwm_value
+	chown system system /sys/kernel/debug/regulator/8226_smbbp_otg/enable
+	chmod 0660 /sys/kernel/debug/regulator/8226_smbbp_otg/enable
+
     # Sensors
     chown system system /efs/FactoryApp/baro_delta
     chmod 0640 /efs/FactoryApp/baro_delta
