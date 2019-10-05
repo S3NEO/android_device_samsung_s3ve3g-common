@@ -37,7 +37,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers and common guards
-write_headers "s3ve3g s3ve3gactivexx s3ve3gchn s3ve3gchnduo s3ve3gduos s3ve3gdv s3ve3gkdi s3ve3gkor s3ve3gspr s3ve3gsprsports s3ve3gusc s3ve3gvzw"
+write_headers "s3ve3gxx s3ve3gjv s3ve3gds"
 
 write_makefiles "$MY_DIR"/common-proprietary-files.txt
 
