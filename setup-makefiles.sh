@@ -37,7 +37,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers and common guards
-write_headers "klte klteactivexx kltechn kltechnduo klteduos kltedv kltekdi kltekor kltespr kltesprsports klteusc kltevzw"
+write_headers "s3ve3g s3ve3gactivexx s3ve3gchn s3ve3gchnduo s3ve3gduos s3ve3gdv s3ve3gkdi s3ve3gkor s3ve3gspr s3ve3gsprsports s3ve3gusc s3ve3gvzw"
 
 write_makefiles "$MY_DIR"/common-proprietary-files.txt
 
@@ -59,4 +59,4 @@ done
 
 write_footers
 
-./../msm8974-common/setup-makefiles.sh $@
+./../msm8226-common/setup-makefiles.sh $@

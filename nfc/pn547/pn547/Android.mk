@@ -14,5 +14,4 @@
 # limitations under the License.
 #
 
-# NFC
-include $(COMMON_PATH)/nfc/board.mk
+include $(call first-makefiles-under,$(call my-dir))
