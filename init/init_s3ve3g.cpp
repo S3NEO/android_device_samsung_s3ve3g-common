@@ -97,7 +97,7 @@ void vendor_load_properties()
             set_ro_product_prop(source, "model", "GT-I9301I");
             set_ro_product_prop(source, "device", "s3ve3g");
         }
-        property_override("ro.build.description", "s3ve3gds-user 4.4.2 KOT49H I9301IXXUANL1 release-keys");
+        property_override("ro.build.description", "s3ve3gxx-user 4.4.2 KOT49H I9301IXXUANL1 release-keys");
         gsm_properties();
     } else if (bootloader.find("I9301Q") == 0) {
         /* s3ve3gjv */
