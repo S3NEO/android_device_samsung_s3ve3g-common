@@ -54,7 +54,6 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 zcache.enabled=1 zcache.compressor=lz4
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
@@ -105,7 +104,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DENSITY := hdpi
 
 # SELinux
-CONFIG_NEO_SAM_SEPOLICY_TYPE := temporary
 include $(COMMON_PATH)/sepolicy/sepolicy.mk
 
 # Sensors
