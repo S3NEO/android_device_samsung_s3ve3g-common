@@ -71,7 +71,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_s3ve3g
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_s3ve3g
 TARGET_RECOVERY_DEVICE_MODULES := libinit_s3ve3g
 
 # Partitions
