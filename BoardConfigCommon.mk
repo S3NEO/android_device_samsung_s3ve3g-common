@@ -105,7 +105,7 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_DENSITY := hdpi
 
 # Releasetools (for FM Radio fix)
-TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAl_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # SELinux
 include $(COMMON_PATH)/sepolicy/sepolicy.mk
