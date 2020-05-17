@@ -104,6 +104,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 # We have very small recovery partition, and we can't use higher DPI.
 TARGET_RECOVERY_DENSITY := hdpi
 
+# Releasetools (for FM Radio fix)
+TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAl_PATH)/releasetools
+
 # SELinux
 include $(COMMON_PATH)/sepolicy/sepolicy.mk
 
