@@ -97,10 +97,6 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
-    
-# Releasetools script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/bin/fm.sh:$(TARGET_COPY_OUT_SYSTEM)/vendor/bin/fm.sh
 
 # Get non-open-source specific aspects
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
