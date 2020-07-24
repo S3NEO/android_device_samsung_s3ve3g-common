@@ -44,7 +44,7 @@ BLOCK_BASED_OTA := true
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
-# HIDL
+# HIDL 
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 # FM
@@ -112,6 +112,17 @@ include $(COMMON_PATH)/sepolicy/sepolicy.mk
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
+
+# Build fingerprint
+ifeq ($(PRODUCT_DEVICE),s3ve3gxx)
+BUILD_FINGERPRINT := samsung/s3ve3gxx/s3ve3g:4.4.2/KOT49H/I9301IXXUANL1:user/release-keys
+endif
+ifeq ($(PRODUCT_DEVICE),s3ve3gjv)
+BUILD_FINGERPRINT := samsung/s3ve3gjv/s3ve3g:4.4.2/KOT49H/I9301IXXUANH1:user/release-keys
+endif
+ifeq ($(PRODUCT_DEVICE),s3ve3gds)
+BUILD_FINGERPRINT := samsung/s3ve3gdsxx/s3ve3gds:4.4.2/KOT49H/I9300IXWUBNJ1:user/release-keys
+endif
 
 # TWRP Support - Optional
 ifeq ($(WITH_TWRP),true)
